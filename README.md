@@ -70,12 +70,12 @@ If the file './interMapFiles/interMap_6-1d.npy' does not exist, please run
 If you need to run the model with different mesh levels, please modified the parameters in gen_interMap.py and run the command above.
 
 ### train CSDNet
-Follow this example for training
+Follow this example to train
 
 ```python train.py --train_files [path to train list] --val_files [path to validation list]```
 
 ### test CSDNet
-Follow this example for testing
+Follow this example to test
 
 ```python test.py --filename_list [path to test list] --dataset_root [path to dataset] --load_ckpt [path to checkpoint] --spherical_metrics --save_output --save_dir [path to directory to save results]```
 
