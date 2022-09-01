@@ -21,6 +21,10 @@ igl
 
 scipy
 
+## pretrained models
+
+The pretrained models of CSDNet on 3D60 and Matterport3D can be downloaded via this [link](https://drive.google.com/drive/folders/1EfDJE0db4wygHD-6GTI-ReLWUBjJJJ2i?usp=sharing)
+
 ## Dataset
 
 We use the dataset [3D60](https://vcl3d.github.io/3D60/). It comprises multi-modal stereo renders of scenes from realistic and synthetic large-scale 3D datasets (Matterport3D, Stanford2D3D, SunCG).
