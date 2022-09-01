@@ -14,6 +14,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from tensorboardX import SummaryWriter
 
+from tqdm import tqdm
+
 import time
 
 from dataset import Dataset360D
@@ -162,7 +164,7 @@ def main():
     # train
     model.train()
     startTime = time.time()
-    for i, batchData in enumerate(trainDataLoader):
+    for i, batchData in enumerate(tqdm(trainDataLoader, desc="CSDNet Training")):
       optimizer.zero_grad()
 
       leftRgbS2 = batchData['leftRGBS2']

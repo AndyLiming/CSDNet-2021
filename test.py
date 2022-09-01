@@ -11,6 +11,8 @@ import torchvision
 import torch.nn as nn
 import torch.nn.functional as F
 
+from tqdm import tqdm
+
 from dataset import Dataset360D
 from models import CSDNet
 import spherical as S360
@@ -270,7 +272,7 @@ def main():
   num = 0
   startTime = time.time()
   with torch.no_grad():
-    for numB, batchData in enumerate(testDataLoader):
+    for numB, batchData in enumerate(tqdm(testDataLoader, desc="CSDNet Testing")):
       leftRgb = batchData['leftRGB'].to(device)
       rightRgb = batchData['rightRGB'].to(device)
       leftDepthGt = batchData['leftDepth'].to(device)
