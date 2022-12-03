@@ -64,6 +64,7 @@ To run the CSDNet, you need to generate the mesh CNN files first. The mesh files
 ```python gen_mesh.py```
 
 This will create a direcoty names "meshfiles" and 8 mesh files in it. The number in the name of each file is the mesh level. Briefly, the higher the level is, the more sampling points that the mesh contais.
+you can also download the mesh files directly from this link https://drive.google.com/file/d/1TgO4mSmRFXLr5WR8uH31m4fgCvrqYpKd/view?usp=share_link.
 
 ### *generate mesh2ERP interpolation maps*
 The mesh2ERP interpolation maps is used to re-project the sphere signals to ERP images.
